@@ -6,4 +6,6 @@ spring:
         cache:
           use_query_cache: false
           use_second_level_cache: false
-  autoconfigure.exclude: org.springframework.boot.autoconfigure.hazelcast.HazelcastAutoConfiguration
+  autoconfigure.exclude:
+  - org.springframework.boot.autoconfigure.hazelcast.HazelcastAutoConfiguration
+  - org.springframework.boot.autoconfigure.hazelcast.HazelcastJpaDependencyAutoConfiguration
