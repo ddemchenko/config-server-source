@@ -12,4 +12,4 @@ spring:
             factory_class: com.hazelcast.hibernate.HazelcastCacheRegionFactory
   cache:
     type: hazelcast
-
+  autoconfigure.exclude: just.a.stub
