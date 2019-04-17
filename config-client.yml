@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: false
+        cache:
+          use_query_cache: false
+          use_second_level_cache: false
+  autoconfigure.exclude: org.springframework.boot.autoconfigure.hazelcast.HazelcastAutoConfiguration
