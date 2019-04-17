@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+        cache:
+          use_query_cache: false
+          use_second_level_cache: false
+          hazelcast:
+            instance_name: exercise-hz
+          region:
+            factory_class: com.hazelcast.hibernate.HazelcastCacheRegionFactory
+  cache:
+    type: caffeine
+  autoconfigure.exclude: org.springframework.boot.autoconfigure.hazelcast.HazelcastAutoConfiguration
