@@ -1,0 +1,18 @@
+admin:
+  sourcingEndpoints:
+    enabled: true
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: false
+        cache:
+          use_query_cache: true
+          use_second_level_cache: true
+          hazelcast:
+            instance_name: trip-hz
+          region:
+            factory_class: com.hazelcast.hibernate.HazelcastCacheRegionFactory
+  cache:
+    type: hazelcast
